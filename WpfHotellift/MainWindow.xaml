@@ -9,6 +9,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -16,12 +18,71 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <Button x:Name="btnFeladat2"
-                Content="2. feladat"
+        <Button x:Name="btnFeladat3"
+                Content="3. feladat"
                 Width="100"
-                Height="50" Click="btnFeladat2_Click"/>
+                Height="50" 
+                Grid.ColumnSpan="3"
+                Click="btnFeladat3_Click"/>
+        <Button x:Name="btnFeladat4"
+                Content="4. feladat"
+                Width="100"
+                Height="50"
+                Grid.Row="1" 
+                Grid.ColumnSpan="3"
+                Click="btnFeladat4_Click"/>
+        <Button x:Name="btnFeladat5"
+                Content="5. feladat"
+                Width="100"
+                Height="50"
+                Grid.Row="2" 
+                Grid.ColumnSpan="3"
+                Click="btnFeladat5_Click"/>
+
+        <Label Content="Kártya száma"
+               Grid.Row="3"/>
+        <TextBox x:Name="txtKartya"
+                 Width="100"
+                 Height="50"
+                 Grid.Row="3"
+                 FontSize="20"
+                 TextAlignment="Center"/>
+
+        <Label Content="Célszint száma"
+               Grid.Row="3"
+               Grid.Column="1"/>
+        <TextBox x:Name="txtCelszint"
+                 Width="100"
+                 Height="50"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 FontSize="20"
+                 TextAlignment="Center"/>
+        
+        <Button x:Name="btnFeladat6"
+                Content="6. feladat"
+                Width="100"
+                Height="50"
+                Grid.Row="3"
+                Grid.Column="2"
+                Click="btnFeladat6_Click"/>
+        <Button x:Name="btnFeladat7"
+                Content="7. feladat"
+                Width="100"
+                Height="50"
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
+                Click="btnFeladat7_Click"/>
+        <Button x:Name="btnFeladat8"
+                Content="8. feladat"
+                Width="100"
+                Height="50"
+                Grid.Row="5"
+                Grid.ColumnSpan="3"
+                Click="btnFeladat8_Click"/>
     </Grid>
 
 </Window>
